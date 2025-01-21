@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day3ps</title>
+  </head>
+  <body>
+    <h1>HELLO</h1>
+    <script>
+      // let days = prompt("enter day: ").toLowerCase();
+      // if (days == ["mon" || "tue" || "wed" || "thu" || "fri"]) {
+      //   console.log(`${days} is weekday`);
+      // } else if (days ==[ "sat" || "sun"]) {
+      //   console.log(`${days} is weekend`);
+      // } else {
+      //   console.log("invalid");
+      // }
+
+      // function calTax(income) {
+      //   let tax = 0;
+      //   if (income <= 250000) {
+      //     tax = 0;
+      //   } else if (income > 250000 && income <= 500000) {
+      //     tax = (income - 250000) * 0.05;
+      //   } else if (income > 500000 && income <= 1000000) {
+      //     tax = 12500 + (income - 500000) * 0.2;
+      //   } else if (income > 1000000) {
+      //     tax = 112500 + (income - 1000000) * 0.3;
+      //   }
+      //   return tax;
+      // }
+      // let income = +prompt("Enter Income:  ");
+      // let op = calTax(income);
+      // console.log(`tax of ${income} is ${op}`);
+
+      // debugger
+      // function shipCost(weight, destination) {
+      //   let cost = 0;
+      //   if (weight <= 1) {
+      //     if (destination === "local") {
+      //       cost = 5;
+      //     } else if (destination === "national") {
+      //       cost = 8;
+      //     } else if (destination === "international") {
+      //       cost = 15;
+      //     }
+      //   } else if (weight <= 5) {
+      //     if (destination === "local") {
+      //       cost = 10;
+      //     } else if (destination === "national") {
+      //       cost = 15;
+      //     } else if (destination === "international") {
+      //       cost = 30;
+      //     }
+      //   } else if (weight <= 10) {
+      //     if (destination === "local") {
+      //       cost = 20;
+      //     } else if (destination === "national") {
+      //       cost = 55;
+      //     } else if (destination === "international") {
+      //       cost = 50;
+      //     }
+      //   } else {
+      //     if (destination == "local") {
+      //       cost = 30;
+      //     } else if (destination == "national") {
+      //       cost = 35;
+      //     } else if (destination == "international") {
+      //       cost = 70;
+      //     }
+      //   }
+      //   return cost;
+      // }
+      // let weight = +prompt("Enter the Weigth: ");
+      // console.log(`Weigth of the product ${weight}`);
+
+      // let destination = prompt( "Destination Local-National-International").toLowerCase();
+      // console.log(`Destination of the product ${destination}`);
+
+      // let shippingCost =shipCost(weight,destination) ;
+      // console.log(`The total shipping cost ${shippingCost}`);
+
+      // debugger
+      // function electricityBill(units){
+      //   let bill =0;
+      //   if(units<=100){
+      //     bill=units*1;
+      //   }
+      //   else if(units>100 && units<=300){
+      //     bill=100*1+(units-100)*1.5;
+      //   }
+      //   else if(units>300){
+      //     bill=100*1+200*1.5+(units-300)*2;
+      //   }
+      //   return bill;
+      // }
+      // let units =+prompt("enter units consumed")
+      // console.log(`Number of units:${units} `);
+      // let billing = electricityBill(units);
+      // console.log(`Total electricity bill amount ${billing}`);
+
+      // let income = +prompt("enter the income");
+      // let tax =
+      //   income <= 250000
+      //     ? console.log("no-tax")
+      //     : income > 250000 && income <= 500000
+      //     ? console.log((`${income}` - 250000) * 0.05)
+      //     : income > 500000 && income <= 1000000
+      //     ? console.log(12500 + (`${income}` - 500000) * 0.2)
+      //     : income > 1000000
+      //     ? console.log(112500 + (`${income}` - 1000000) * 0.3)
+      //     : console.log("invalid input");
+   
+
+       function billEct(units){
+        bill=0
+        if(units<=100){
+        
+          bill=units*1
+        }
+        else if(units>100 && units<=300){
+          bill=100*1+(units-100)*1.5
+        }
+        else if(units>300){
+          bill=100*1+200*1.5+(units-300)*2
+        }
+        return bill;
+       }
+       let units = +prompt("enter units")
+       let op =billEct(units)
+       console.log("Total electricity bill amount:"+op);
+      let opdp = document.getElementsByTagName("h1")[0].innerHTML=`Total electricity bill amount: ${op}`
+
+      
+       
+
+      // let weight = parseInt(prompt("Enter weight : "))
+      // let dest = prompt("Enter dest : ").toLowerCase()
+
+      // if(weight <= 1){
+      //   let res = (dest == "local") ? "The total shipping cost : 5rs" : (dest == "national") ? "The total shipping cost : 8rs" : (dest == "international") ? "The total shipping cost : 15rs" : "Invalid Destination";
+      //   console.log(res);
+      // }
+      // else if(weight >1 && weight <= 5){
+      //   let res = (dest == "local") ? "The total shipping cost : 10rs" : (dest == "national") ? "The total shipping cost : 15rs" : (dest == "international") ? "The total shipping cost : 30rs" : "Invalid Destination";
+      //   console.log(res);
+      // }
+
+      // else if(weight >5 && weight <= 10){
+      //   let res = (dest == "local") ? "The total shipping cost : 20rs" : (dest == "national") ? "The total shipping cost : 25rs" : (dest == "international") ? "The total shipping cost : 50rs" : "Invalid Destination";
+      //   console.log(res);
+      // }
+      // else if(weight > 10){
+      //   let res = (dest == "local") ? "The total shipping cost : 30rs" : (dest == "national") ? "The total shipping cost : 35rs" : (dest == "international") ? "The total shipping cost : 70rs" : "Invalid Destination";
+      //   console.log(res);
+      // }
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
